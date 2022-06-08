@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "143329386360",
+    "project_id": "online-recruitment-e0de7",
+    "storage_bucket": "online-recruitment-e0de7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:143329386360:android:be1bcf36eec88c0d2a328d",
+        "android_client_info": {
+          "package_name": "com.example.online_recruitment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "143329386360-hs9qo4gnp5korcs7a63h4spmofro5f4n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwmNFyDhUy84L1QCjgi82q_palBxwoI7M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "143329386360-hs9qo4gnp5korcs7a63h4spmofro5f4n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
