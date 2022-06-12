@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:online_recruitment/Screens/applications.dart';
 import 'package:online_recruitment/Screens/data.dart';
 import 'package:online_recruitment/Screens/jobs.dart';

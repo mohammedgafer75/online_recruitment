@@ -47,9 +47,11 @@ class MainController extends GetxController {
     applications.bindStream(getAllRequests());
   }
 
+// دالة جلب الوظائف من قاعدة البيانات
   Stream<List<Jobs>> getAllJobs() => collectionReference
       .snapshots()
       .map((query) => query.docs.map((item) => Jobs.fromMap(item)).toList());
+// دالة جلب الوظائف من قاعدة البيانات
   Stream<List<Applications>> getAllRequests() =>
       collectionReference2.snapshots().map((query) =>
           query.docs.map((item) => Applications.fromMap(item)).toList());
@@ -75,6 +77,7 @@ class MainController extends GetxController {
 // final List<StorageUploadTask> _tasks = <StorageUploadTask>[];
   File? file;
   int c = 0;
+// دالة اختيار ملف
   void openFileExplorer() async {
     try {
       FilePickerResult? result = await FilePicker.platform.pickFiles(
@@ -92,6 +95,7 @@ class MainController extends GetxController {
     }
   }
 
+// دالة رفع الملف الى الداتا بيز
   Future uploadImageToFirebase() async {
     String fileName = basename(file!.path);
 
@@ -106,6 +110,7 @@ class MainController extends GetxController {
           (value) => image_url = value,
         );
   }
+// دالة اضافة وظيفة
 
   void addJob() async {
     final isValid = formKey.currentState!.validate();
@@ -131,6 +136,7 @@ class MainController extends GetxController {
     }
   }
 
+//دالة اضافة الوظيفة الى قائمة الطلبات
   void sendRequest(String title, String company) async {
     // final isValid = formKey.currentState!.validate();
     if (c == 0) {

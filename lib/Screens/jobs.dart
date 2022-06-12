@@ -1,6 +1,7 @@
+// صفحة الوظائف 
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:online_recruitment/Screens/data.dart';
 import 'package:online_recruitment/Screens/job_detail.dart';
 import 'package:online_recruitment/constants.dart';
 import 'package:online_recruitment/controller/auth_controller.dart';

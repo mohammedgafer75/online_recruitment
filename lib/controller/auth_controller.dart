@@ -56,7 +56,7 @@ class AuthController extends GetxController {
     ever(_user, _initialScreen);
     super.onInit();
   }
-
+// دالة جلب المستخدمين من الداتا بيز
   Stream<List<Users>> getAllUser() => collectionReference
       .snapshots()
       .map((query) => query.docs.map((item) => Users.fromMap(item)).toList());
@@ -84,7 +84,7 @@ class AuthController extends GetxController {
     obscureTextSignupConfirm = !obscureTextSignupConfirm;
     update();
   }
-
+// دالة التاكد  من ادخال الاسم
   String? validate(String value) {
     if (value.isEmpty) {
       return "please enter your name";
@@ -146,7 +146,7 @@ class AuthController extends GetxController {
     ob = !ob;
     update(['password']);
   }
-
+// دالة تسجيل الخروج
   void signOut() async {
     Get.dialog(AlertDialog(
       content: const Text('Are you are sure to log out ????'),
@@ -168,7 +168,7 @@ class AuthController extends GetxController {
       ],
     ));
   }
-
+// دالة حذف العميل
   void deleteCustomer(String id) {
     Get.dialog(AlertDialog(
       content: const Text('Delete user'),
@@ -195,7 +195,7 @@ class AuthController extends GetxController {
       ],
     ));
   }
-
+// دالة انشاء الحساب
   void register(String table) async {
     if (formKey2.currentState!.validate()) {
       try {
@@ -243,7 +243,7 @@ class AuthController extends GetxController {
       }
     }
   }
-
+// دالة تسجيل الدخول
   void login() async {
     if (formKey.currentState!.validate()) {
       try {

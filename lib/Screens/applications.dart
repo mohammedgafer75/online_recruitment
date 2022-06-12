@@ -1,9 +1,9 @@
+//  صفحة تطبيقات المستخدم
+
 import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/src/rx_flutter/rx_getx_widget.dart';
-import 'package:online_recruitment/Screens/data.dart';
 import 'package:online_recruitment/controller/main_controller.dart';
 import 'package:online_recruitment/model/applications_model.dart';
-import 'package:online_recruitment/widgets/bottom_nav_bar.dart';
 
 class ApplicationsPage extends StatefulWidget {
   const ApplicationsPage({Key? key}) : super(key: key);

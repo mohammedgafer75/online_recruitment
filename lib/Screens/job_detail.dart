@@ -1,6 +1,6 @@
+//  صفحة تفاصيل الوظيفة
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:online_recruitment/Screens/data.dart';
 import 'package:online_recruitment/controller/main_controller.dart';
 import 'package:online_recruitment/model/job_model.dart';
 
@@ -211,14 +211,6 @@ class JobDetail extends StatelessWidget {
         ),
       ),
     );
-  }
-
-  List<Widget> buildRequirements() {
-    List<Widget> list = [];
-    for (var i = 0; i < getJobsRequirements().length; i++) {
-      list.add(buildRequirement(getJobsRequirements()[i]));
-    }
-    return list;
   }
 
   Widget buildRequirement(String requirement) {
